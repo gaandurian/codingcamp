@@ -363,16 +363,13 @@ box-shadow: 0px 1px 1px rgba(0,0,0,.5);
 /*  making the text go over the fire or the other way around */
 
 .canvo {
-	position: relative;
-  top: -325px;
+  position: relative;
+  top: -478px;
 	z-index: 9;
 }
 .imgo {
   position: absolute;
   z-index: 5;
-  left: 445px;
-  top: 325px;
-  width: 170px;
   transform: rotate(10deg);
 
 }
@@ -380,8 +377,6 @@ box-shadow: 0px 1px 1px rgba(0,0,0,.5);
 
   position: absolute;
   z-index: 10;
-  left: 445px;
-  top: 325px;
   transform: rotate(45deg);
 
 }
@@ -394,7 +389,10 @@ box-shadow: 0px 1px 1px rgba(0,0,0,.5);
     z-index: 1;
 } */
 
-
+.coree{
+  width: 100% !important;
+  margin-left: 0% !important;
+}
 
 	#home-row-1 h4 {
 		font-size: 32px;
@@ -630,8 +628,7 @@ box-shadow: 0px 2px 2px rgba(0,0,0,.2);
 #slide-5 {
 	background-color: #fff;
 	color: #444;
-				padding-bottom: 150px;
-				box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+  box-shadow: 0px 2px 2px rgba(0,0,0,.2);
 
 
 }
@@ -1017,15 +1014,11 @@ html {
 		 padding-top: 80px;
 		 padding-bottom: 70px;
 	font-size: 2.7em;
-		 margin-bottom: 270px;
 }
 @media (max-width: 500px) {
 	.btn3d {
 
 		font-size: 1.7em;
-		padding-top: 150px;
-		padding-bottom: 150px;
-		margin-bottom: 130px;
 		margin-top: 0;
 	}
 	#slide-4 h1 {
