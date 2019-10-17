@@ -6,7 +6,8 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
-
+ @import url('https://fonts.googleapis.com/css?family=Chicle|Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Skranji&display=swap');
 .make-visible {
 	display:none;
 }
@@ -604,20 +605,20 @@ z-index: -2;
 } */
 
 #slide-4 {
-	background: rgba(255,255,255,1);
-	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,232,1) 50%, rgba(219,217,184,1) 100%);
+  font-family: 'Skranji', cursive;
+  	background: rgba(255,255,255,1) -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,232,1) 50%, rgba(219,217,184,1) 100%);
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(255,254,232,1)), color-stop(100%, rgba(219,217,184,1)));
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,232,1) 50%, rgba(219,217,184,1) 100%);
 	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,232,1) 50%, rgba(219,217,184,1) 100%);
 	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,254,232,1) 50%, rgba(219,217,184,1) 100%);
 	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,254,232,1) 50%, rgba(219,217,184,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbd9b8', GradientType=1 );
-	color: red;
+  	color: red;
 z-index: 54;
 box-shadow: 0px 2px 2px rgba(0,0,0,.2);
 }
 #slide-4 h1 {
-	font-family: Lato, helvetica;
+  font-family: 'Poppins', sans-serif;
 	color: #444;
 	margin-top: 200px;
 	padding-bottom: 40px;
@@ -1065,18 +1066,12 @@ h1 {
 }
 
 
-
-#slide-7 {
-	background: url('../images/tile.jpg') repeat;
-
-}
 #slide-7 h1 {
-	color: #122;
+  color: #fff ;
 	padding-top: 120px;
 	padding-bottom: 120px;
-	font-family: Lato, helvetica;
+  font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	background-color: #fff;
 
 }
 
