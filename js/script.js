@@ -223,66 +223,6 @@ $(document).ready(function(e) {
 	});
 
 
-
-
-
-
-
-
-	cpt = 0;
-	challenger = false;
-	$('.btn3d').on('click', function() {
-
-		if (cpt < 6) {
-			console.log(cpt);
-			new toastr['info'](6 - cpt + ' more clicks to become a challenger !');
-
-		}
-
-
-		if (cpt === 6) {
-			console.log(cpt);
-			new toastr['success']('You are now a challenger !');
-			new toastr['info']('Opening form link..');
-
-			setTimeout(() => {
-				var win = window.open('https://goo.gl/ziFRrz', '_blank');
-				if (win) {
-					//Browser has allowed it to be opened
-					win.focus();
-				} else {
-					//Browser has blocked it
-					alert('Please allow popups for this website');
-				}
-			}, 500);
-
-			//challenger = true;
-		}
-		if (cpt > 6) {
-			new toastr['success']('You are already a challenger !');
-			if (cpt % 3 == 0) {
-				var win = window.open('https://goo.gl/ziFRrz', '_blank');
-				if (win) {
-					//Browser has allowed it to be opened
-					win.focus();
-				} else {
-					//Browser has blocked it
-					alert('Please allow popups for this website');
-				}
-			}
-		}
-		cpt++;
-	})
-
-
-
-
-
-
-
-
-
-
 	/*************************
 	 * = Controls active menu *
 	 * Hover text for the last slide
@@ -373,26 +313,9 @@ function enable_arrows(dataslide) {
 /******************
  * = Arrows click  *
  ******************/
-$('.btn-solo').addClass('btn-clicked');
-$('.team-wrapper').addClass("make-visible");
-
-
-$('.btn-solo').on('click', function(e) {
-	$('.btn-solo').addClass("btn-clicked");
-	$('.btn-team').removeClass("btn-clicked");
-	$('.team-wrapper').addClass("make-visible");
-	$('.solo-wrapper').removeClass("make-visible");
-	e.preventDefault();
-});
-
-
-$('.btn-team').on('click', function(e) {
-	$('.btn-solo').removeClass("btn-clicked");
-	$('.btn-team').addClass("btn-clicked");
-	$('.team-wrapper').removeClass("make-visible");
-	$('.solo-wrapper').addClass("make-visible");
-	e.preventDefault();
-});
+$(".btn3d").click(()=>{
+	window.open("http://bit.ly/CodingCampv3")
+})
 
 // slide through array my own take on this
 //TODO disbale click when button disabled, also fix the scroll index going over the array length
